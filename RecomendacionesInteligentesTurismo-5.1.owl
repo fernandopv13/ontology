@@ -1,0 +1,3836 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/teseo/ontologies/2025/3/TourismRecommendations"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/teseo/ontologies/2025/3/TourismRecommendations"
+     versionIRI="http://www.semanticweb.org/teseo/ontologies/2025/3/TourismRecommendations/1.0">
+    <Prefix name="" IRI="http://www.semanticweb.org/teseo/ontologies/2025/3/TourismRecommendations/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/abstract"/>
+        <Literal xml:lang="en">The domain of the ontology is framed around tourism recommendations and their  main characteristics. The scope of the ontology will be modeled on the places to visit, what to do there, accomodations and where to eat in different cities.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en">An ontology devoted to make smart tourism recommendations</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal xml:lang="en">Smart Tourism Recommendations</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">Initial of the ontology with the incorporation of the following datasets.
+
+https://dbpedia.org/page/List_of_castles_in_Spain
+https://dbpedia.org/page/List_of_museums_in_Spain
+[  Ir añadiendo  ]</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Accomodation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City-"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comfort"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coordinates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuisineType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalHeritage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Destination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstClass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Luxury_hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Public_Bycicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TourismEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tourist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tranviaç"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAtraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCathegory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoordinates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCuisine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEventType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHotelType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManagedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manageTransportType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#offersService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#serviceInCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#serviceType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#territoryOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAverageTransportPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLatitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLongitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMiddlePrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNightPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStars"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#location"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andalucia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andalusian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aragón"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelona_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bilbao_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Business"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cadiz_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castell_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castilla_La_Mancha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_San_Sebastián"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Castillo_Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catalunya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Catedral_Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#City_Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comunidad_Valenciana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Comunidad_de_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cultural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Euzkadi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fira_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gastronomic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Palace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Palace_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Palace_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Royal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Royal_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Sol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Sol_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Sol_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Sol_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Vista"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Vista_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Vista_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_del_Mar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Japanese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Luxury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madrid_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mediterranean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_San_Sebastián"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Metro_Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mexican"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_San_Sebastián"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Movi_Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_San_Sebastián"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Málaga_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Navarra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palacio_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palacio_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palacio_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palacio_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palacio_Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palacio_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palacio_Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palacio_Zaaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palau_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pamplona_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_San_Sebastián"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parque_Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#San_Sebastián"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#San_Sebastián_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sevilla_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Technological"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toledo_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tourist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_San_Sebastián"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_Málaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_San_Sebastián"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Urban_Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valencia_Coords"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zaragoza_Coords"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/abstract"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Comfort"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hotel"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasStars"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FirstClass"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hotel"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasStars"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Luxury_hotel"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hotel"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasStars"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Standard"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hotel"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasStars"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tourist"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hotel"/>
+            <DataHasValue>
+                <DataProperty IRI="#hasStars"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Accomodation"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atraction"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beach"/>
+        <Class IRI="#Atraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#TransportType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City-"/>
+        <Class IRI="#Destination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City-"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCoordinates"/>
+            <Class IRI="#Coordinates"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Company"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coordinates"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coordinates"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasLatitude"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coordinates"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasLongitude"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Destination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CuisineType"/>
+        <Class IRI="#Restaurants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalHeritage"/>
+        <Class IRI="#Atraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Destination"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventType"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Accomodation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasStars"/>
+            <Datatype abbreviatedIRI="xsd:int"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotelType"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metro"/>
+        <Class IRI="#TransportType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monument"/>
+        <Class IRI="#Atraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <Class IRI="#Atraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#Atraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public_Bycicle"/>
+        <Class IRI="#TransportType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <Class IRI="#Destination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurants"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxi"/>
+        <Class IRI="#TransportType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportService"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportType"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transportation"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tranviaç"/>
+        <Class IRI="#TransportType"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Andalucia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Andalusian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Aragón"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Barcelona_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Bilbao_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Business"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Cadiz_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Castell_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Castilla_La_Mancha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Castillo_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Castillo_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Castillo_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Castillo_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Castillo_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Castillo_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Castillo_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Castillo_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Castillo_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Castillo_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Castillo_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Castillo_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Castillo_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Castillo_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Castillo_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Castillo_Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Castillo_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Castillo_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Catalunya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Catedral_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Catedral_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Catedral_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Catedral_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Catedral_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Catedral_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Catedral_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Catedral_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Catedral_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Catedral_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Catedral_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Catedral_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Catedral_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Catedral_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Catedral_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Catedral_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#City_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#City_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#City_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#City_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#City_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#City_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#City_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#City_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#City_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Comunidad_Valenciana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Comunidad_de_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Cultural"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Euzkadi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#Fira_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Gastronomic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Palace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Palace_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Palace_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Royal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Royal_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Sol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Sol_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Sol_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Sol_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Vista"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Vista_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Vista_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_del_Mar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Italian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Japanese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Luxury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Madrid_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Mediterranean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Metro_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuisineType"/>
+        <NamedIndividual IRI="#Mexican"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Movi_Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Museo_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Museo_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Museo_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Museo_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Museo_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Museo_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Museo_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Museo_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Museo_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Museo_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Museo_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Museo_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Music"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Málaga_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Navarra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Palacio_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Palacio_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Palacio_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Palacio_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Palacio_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Palacio_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Palacio_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Palacio_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Palacio_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Palacio_Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Palacio_Zaaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Palau_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Palau_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Pamplona_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Parque_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Parque_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Parque_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Parque_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Parque_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Parque_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Parque_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Parque_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Parque_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Parque_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Parque_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Parque_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Park"/>
+        <NamedIndividual IRI="#Parque_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalHeritage"/>
+        <NamedIndividual IRI="#Parque_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beach"/>
+        <NamedIndividual IRI="#Parque_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Monument"/>
+        <NamedIndividual IRI="#Parque_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Parque_Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Parque_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Rural"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#San_Sebastián_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Sevilla_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Sports"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#Technological"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Toledo_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#Tourist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Trans_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Trans_Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Trans_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Trans_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Trans_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Trans_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Trans_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Trans_Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Trans_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_Málaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_San_Sebastián"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Company"/>
+        <NamedIndividual IRI="#Urban_Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Valencia_Coords"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City-"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinates"/>
+        <NamedIndividual IRI="#Zaragoza_Coords"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Andalucia"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Aragón"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Barcelona"/>
+        <NamedIndividual IRI="#Catalunya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Barcelona"/>
+        <NamedIndividual IRI="#Barcelona_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Bilbao"/>
+        <NamedIndividual IRI="#Euzkadi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Bilbao"/>
+        <NamedIndividual IRI="#Bilbao_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Cadiz"/>
+        <NamedIndividual IRI="#Andalucia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Cadiz"/>
+        <NamedIndividual IRI="#Cadiz_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castell_Barcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Castilla_La_Mancha"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_Bilbao"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_Cadiz"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_Madrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_Málaga"/>
+        <NamedIndividual IRI="#Málaga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_Pamplona"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_San_Sebastián"/>
+        <NamedIndividual IRI="#San_Sebastián"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_Sevilla"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_Toledo"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_Valencia"/>
+        <NamedIndividual IRI="#Valencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Castillo_Zaragoza"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Catalunya"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Barcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Bilbao"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Cadiz"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Madrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Málaga"/>
+        <NamedIndividual IRI="#Málaga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Pamplona"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Sevilla"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Toledo"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+        <NamedIndividual IRI="#Valencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Catedral_Zaragoza"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#City_Barcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Comunidad_Valenciana"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Comunidad_de_Madrid"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Euzkadi"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEventType"/>
+        <NamedIndividual IRI="#Fira_Barcelona"/>
+        <NamedIndividual IRI="#Cultural"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEventType"/>
+        <NamedIndividual IRI="#Fira_Barcelona"/>
+        <NamedIndividual IRI="#Music"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEventType"/>
+        <NamedIndividual IRI="#Fira_Barcelona"/>
+        <NamedIndividual IRI="#Sports"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Palace"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Palace"/>
+        <NamedIndividual IRI="#Business"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Palace_Bilbao"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Palace_Bilbao"/>
+        <NamedIndividual IRI="#Tourist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Palace_Madrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Palace_Madrid"/>
+        <NamedIndividual IRI="#Luxury"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Royal"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Royal"/>
+        <NamedIndividual IRI="#Beach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Royal_Madrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Royal_Madrid"/>
+        <NamedIndividual IRI="#Beach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Sol"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Sol"/>
+        <NamedIndividual IRI="#Rural"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Sol_Bilbao"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Sol_Bilbao"/>
+        <NamedIndividual IRI="#Business"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Sol_Cadiz"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Sol_Cadiz"/>
+        <NamedIndividual IRI="#Business"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Sol_Málaga"/>
+        <NamedIndividual IRI="#Málaga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Sol_Málaga"/>
+        <NamedIndividual IRI="#Business"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Vista"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Vista"/>
+        <NamedIndividual IRI="#Beach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Vista"/>
+        <NamedIndividual IRI="#Rural"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Vista"/>
+        <NamedIndividual IRI="#Tourist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Vista_Cadiz"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Vista_Cadiz"/>
+        <NamedIndividual IRI="#Tourist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_Vista_Málaga"/>
+        <NamedIndividual IRI="#Málaga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_Vista_Málaga"/>
+        <NamedIndividual IRI="#Business"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Hotel_del_Mar"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <NamedIndividual IRI="#Hotel_del_Mar"/>
+        <NamedIndividual IRI="#Tourist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Madrid"/>
+        <NamedIndividual IRI="#Comunidad_de_Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Madrid"/>
+        <NamedIndividual IRI="#Madrid_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Metro_Barcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_Barcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_Bilbao"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_Cadiz"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_Madrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_Málaga"/>
+        <NamedIndividual IRI="#Málaga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_Pamplona"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_San_Sebastián"/>
+        <NamedIndividual IRI="#San_Sebastián"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_Sevilla"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_Toledo"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Málaga"/>
+        <NamedIndividual IRI="#Andalucia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Málaga"/>
+        <NamedIndividual IRI="#Málaga_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Navarra"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Palacio_Bilbao"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Palacio_Cadiz"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Palacio_Madrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Palacio_Málaga"/>
+        <NamedIndividual IRI="#Málaga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Palacio_Pamplona"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Palacio_Toledo"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Palacio_Valencia"/>
+        <NamedIndividual IRI="#Valencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Palacio_Zaaragoza"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Palau_Barcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Pamplona"/>
+        <NamedIndividual IRI="#Navarra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Pamplona"/>
+        <NamedIndividual IRI="#Pamplona_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Barcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Bilbao"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Cadiz"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Madrid"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Málaga"/>
+        <NamedIndividual IRI="#Málaga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Pamplona"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_San_Sebastián"/>
+        <NamedIndividual IRI="#San_Sebastián"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Sevilla"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Toledo"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Valencia"/>
+        <NamedIndividual IRI="#Valencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Parque_Zaragoza"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#San_Sebastián"/>
+        <NamedIndividual IRI="#Euzkadi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#San_Sebastián"/>
+        <NamedIndividual IRI="#Pamplona_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Sevilla"/>
+        <NamedIndividual IRI="#Andalucia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Sevilla"/>
+        <NamedIndividual IRI="#Sevilla_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Toledo"/>
+        <NamedIndividual IRI="#Castilla_La_Mancha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Toledo"/>
+        <NamedIndividual IRI="#Toledo_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <NamedIndividual IRI="#Urban_Barcelona"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Valencia"/>
+        <NamedIndividual IRI="#Comunidad_Valenciana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Valencia"/>
+        <NamedIndividual IRI="#Valencia_Coords"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+        <NamedIndividual IRI="#Aragón"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+        <NamedIndividual IRI="#Zaragoza_Coords"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Barcelona_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">41.3874</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Barcelona_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.1686</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Bilbao_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">43.263</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Bilbao_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-2.935</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Cadiz_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">36.5297</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Cadiz_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-6.292</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castell_Barcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Sevilla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Castillo_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Barcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Barcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Sevilla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Sevilla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Catedral_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Palace"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">251</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Palace"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Palace_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">286</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Palace_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Palace_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">227</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Palace_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Royal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">269</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Royal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Royal_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">131</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Royal_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Sol"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">189</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Sol"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Sol_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">59</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Sol_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Sol_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">260</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Sol_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Sol_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">84</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Sol_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Vista"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">251</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Vista"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Vista_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">254</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Vista_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_Vista_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">238</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_Vista_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasNightPrice"/>
+        <NamedIndividual IRI="#Hotel_del_Mar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">298</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStars"/>
+        <NamedIndividual IRI="#Hotel_del_Mar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Madrid_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">40.4168</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Madrid_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-3.7038</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Barcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Sevilla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Museo_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Málaga_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">36.7213</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Málaga_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-4.421</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palacio_Zaaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palau_Barcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Palau_Barcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Pamplona_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">42.8169</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Pamplona_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-1.6444</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Barcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Málaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_San_Sebastián"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Sevilla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Parque_Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#San_Sebastián_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">43.3183</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#San_Sebastián_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-1.9812</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Sevilla_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">37.3886</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Sevilla_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-5.9823</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Toledo_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">39.8628</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Toledo_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-4.0273</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Valencia_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">39.4699</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Valencia_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-0.3763</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLatitude"/>
+        <NamedIndividual IRI="#Zaragoza_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">41.6488</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLongitude"/>
+        <NamedIndividual IRI="#Zaragoza_Coords"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-0.8891</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAtraction"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEvent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEventType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <ObjectProperty IRI="#isInCity"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <ObjectProperty IRI="#territoryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <ObjectProperty IRI="#manageTransportType"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#belongsToRegion"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#territoryOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToCity"/>
+        <Class IRI="#TourismEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAtraction"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCathegory"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <Class IRI="#Restaurants"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEvent"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEventType"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <Class IRI="#Hotel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <Class IRI="#Transportation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manageTransportType"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#offersService"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#operatedBy"/>
+        <Class IRI="#TransportService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#serviceInCity"/>
+        <Class IRI="#TransportService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#serviceType"/>
+        <Class IRI="#TransportService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#territoryOf"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToRegion"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAtraction"/>
+        <Class IRI="#Atraction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCoordinates"/>
+        <Class IRI="#Coordinates"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCuisine"/>
+        <Class IRI="#CuisineType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEvent"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEventType"/>
+        <Class IRI="#EventType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHotelType"/>
+        <Class IRI="#HotelType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInCity"/>
+        <Class IRI="#TourismEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manageTransportType"/>
+        <Class IRI="#TransportType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#offersService"/>
+        <Class IRI="#TransportService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#operatedBy"/>
+        <Class IRI="#Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#serviceType"/>
+        <Class IRI="#TransportType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#territoryOf"/>
+        <Class IRI="#Destination"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAverageTransportPrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLatitude"/>
+        <DataProperty IRI="#location"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLongitude"/>
+        <DataProperty IRI="#location"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAverageTransportPrice"/>
+        <Class IRI="#TransportService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDate"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLatitude"/>
+        <Class IRI="#Coordinates"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLongitude"/>
+        <Class IRI="#Coordinates"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMiddlePrice"/>
+        <Class IRI="#Restaurants"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNightPrice"/>
+        <Class IRI="#Accomodation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRating"/>
+        <Class IRI="#TransportService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStars"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#location"/>
+        <Class IRI="#Coordinates"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAverageTransportPrice"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLatitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLongitude"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasMiddlePrice"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNightPrice"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRating"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStars"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Accomodation</IRI>
+        <Literal xml:lang="en">A boarding house or hostel is a type of temporary lodging provided to a person as a guest or for a fee in a place that will serve them at least overnight.
+People traveling away from home for more than a day need accommodations to sleep in, but also to ensure safety, protection from the cold or bad weather, storage for their luggage, and access to common bathroom facilities.
+The most common form of commercial lodging is a hotel, but it can also be a motel, hostel, inn, or commercial accommodations in a private home for a fee, such as a bed and breakfast, guesthouse, or vacation rental.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Accomodation</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Lodging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Accomodation</IRI>
+        <Literal xml:lang="en">Lodging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Andalucia</IRI>
+        <Literal xml:lang="en">Andalusia (Andalucia in Spanish) is an autonomous community of Spain recognized as a historical nationality by its Statute of Autonomy. It is made up of eight provinces: Almería, Cádiz, Córdoba, Granada, Huelva, Jaén, Málaga and Seville. Its capital and most populous city is Seville, seat of the Governing Council of the Andalusian Regional Government, the Parliament and the Presidency of the Regional Government of Andalusia.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Andalucia</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Andalusia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Andalucia</IRI>
+        <Literal xml:lang="en">Andalusia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Andalucia</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Andalusia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Andalusian</IRI>
+        <Literal xml:lang="en">The autonomous community of Andalusia has a rich, varied cuisine, with variations between the coast and the interior. It is part of the Mediterranean diet. Its cuisine is closely linked to the use of olive oil, nuts, fish, and meat. Pastries are strongly influenced by Andalusian cuisine, with the use of almonds and honey. The region&apos;s Christmas sweets, such as mantecados, polvorones, and alfajores, are well-known.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Andalusian</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Andalusian_cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Andalusian</IRI>
+        <Literal xml:lang="en">Andalusian_cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Andalusian</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Andalusian_cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Aragón</IRI>
+        <Literal xml:lang="en">Aragon (Aragón in Spanish) is a Spanish autonomous community, resulting from the historic kingdom of the same name. It encompasses the central stretch of the Ebro Valley, the central Pyrenees, and part of the Iberian Peninsula in the north of the country. It is defined in its statute of autonomy as a historical nationality.
+The Kingdom of Aragon, along with the Principality of Catalonia, the kingdoms of Valencia and Majorca, and other territories of France, Italy, and Greece, formed the historic Crown of Aragon for centuries. The current autonomous community was established in 1982, comprising the provinces of Huesca, Teruel, and Zaragoza. Its capital is the city of Zaragoza.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Aragón</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Aragon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Aragón</IRI>
+        <Literal xml:lang="en">Aragon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Barcelona</IRI>
+        <Literal xml:lang="en">Barcelona is a Spanish municipality and city, the capital of Catalonia, the province of Barcelona, ​​and the Barcelonés region. With a population of 1,702,814 as of January 2024, it is the second most populous city in Spain and the Iberian Peninsula after Madrid, and the tenth in the European Union. Its metropolitan area has a population of 5,797,356 according to Eurostat, making it the fifth most populous urban agglomeration and the most densely populated in the European Union.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Barcelona</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Barcelona</IRI>
+        <Literal xml:lang="en">Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Barcelona</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Barcelona_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicate north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicate west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Barcelona_Coords</IRI>
+        <Literal xml:lang="en">Barcelona_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Beach</IRI>
+        <Literal xml:lang="en">In this type of hotel, travelers look for specific features in their accommodations, for example, proximity to the coast and sea as the main attraction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Beach</IRI>
+        <Literal xml:lang="en">InBeach</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bilbao</IRI>
+        <Literal xml:lang="en">Bilbao (Basque: Bilbo) is a municipality located in northern Spain and a town within the municipality, capital of the province and historical territory of Biscay, in the autonomous community of the Basque Country. Bilbao is the capital and only locality in the municipality, and with a population of 348,089 (INE 2024), it is the most populated city in the autonomous community, being the head of the Bilbao metropolitan area, a conurbation of more than 1,000,000 inhabitants that extends along the Bilbao estuary or Nervión.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Bilbao</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Bilbao</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bilbao</IRI>
+        <Literal xml:lang="en">Bilbao</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Bilbao</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Bilbao</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bilbao_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bilbao_Coords</IRI>
+        <Literal xml:lang="en">Bilbao_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bus</IRI>
+        <Literal xml:lang="en">A bus is a vehicle designed to transport large numbers of people on urban roads. It is generally used in urban and interurban public transportation services, as well as on fixed-route routes. Its capacity can vary between 10 and 120 passengers. In bus rapid transit systems, bus capacity can vary between 160 and 240 passengers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Bus</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Bus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bus</IRI>
+        <Literal xml:lang="en">Bus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Bus</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Bus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Business</IRI>
+        <Literal xml:lang="en">Although any traveler can use this type of accommodation, these types of hotel rooms and larger properties generally target business travelers as their primary demographic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Business</IRI>
+        <Literal xml:lang="en">Business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cadiz_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cadiz_Coords</IRI>
+        <Literal xml:lang="en">Cádiz_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Castilla_La_Mancha</IRI>
+        <Literal xml:lang="en">Castilla_La_Mancha</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Catalunya</IRI>
+        <Literal xml:lang="en">Catalonia (Catalan: Catalunya; Aranese: Catalonha; Spanish: Cataluña) is an autonomous community of Spain, considered a historical nationality in its Statute of Autonomy. Located in the northeast of the Iberian Peninsula, it occupies a territory of approximately 32,000 km².</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Catalunya</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Catalonia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Catalunya</IRI>
+        <Literal xml:lang="en">Catalonia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City-</IRI>
+        <Literal xml:lang="en">A city is a human settlement of considerable size. The term &quot;city&quot; has different meanings around the world, and in some places the settlement may be very small. Even when the term is limited to larger settlements, there is no universally accepted definition of the lower limit of its size. In a narrower sense, a city can be defined as a permanent, densely populated place with defined administrative boundaries, whose inhabitants work primarily in non-agricultural activities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#City-</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#City-</IRI>
+        <Literal xml:lang="en">City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#City-</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Comfort</IRI>
+        <Literal xml:lang="en">Comfort_Cathegory(3-stars)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Comunidad_Valenciana</IRI>
+        <Literal xml:lang="en">Valencian_Community</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Comunidad_de_Madrid</IRI>
+        <Literal xml:lang="en">Community_of_Maddrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Coordinates</IRI>
+        <Literal xml:lang="en">Geographic coordinates are a reference system that allows each location on Earth to be specified by a set of numbers, letters, or symbols. The coordinates are generally chosen so that two references represent the horizontal position, and a third represents the altitude. The horizontal position coordinates used are latitude and longitude, a spherical or spheroidal angular coordinate system centered on the Earth and usually expressed in sexagesimal degrees..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Coordinates</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Geographic_coordinate_system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Coordinates</IRI>
+        <Literal xml:lang="en">Coordinates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Coordinates</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Geographic_coordinate_system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="en">A country is a territory with its own geographical and cultural characteristics, which may or may not constitute a sovereign state or a political entity within a state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="en">Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CuisineType</IRI>
+        <Literal xml:lang="en">CuisineType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Destination</IRI>
+        <Literal xml:lang="en">A destination is a country, state, region, city, or town which is marketed or markets itself as a place for tourists to visit. It may contain one or more tourist attractions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Destination</IRI>
+        <Literal xml:lang="en">Destination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Euzkadi</IRI>
+        <Literal xml:lang="en">Basque_Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FirstClass</IRI>
+        <Literal xml:lang="en">FirstClass_Cathegory(4-stars)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hotel</IRI>
+        <Literal xml:lang="en">A hotel is a building designed and designed to provide accommodations for people and allow visitors to travel. Hotels provide guests with additional services such as restaurants, swimming pools, and childcare. Hotels are typically categorized according to their level of comfort, location, and level of service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hotel</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotel</IRI>
+        <Literal xml:lang="en">Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Hotel</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelType</IRI>
+        <Literal xml:lang="en">A hotel is a building designed and designed to provide accommodations for people and allow visitors to travel. Hotels provide guests with additional services such as restaurants, swimming pools, and childcare. Hotels are typically categorized according to their level of comfort, location, and level of service.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#HotelType</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#HotelType</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hotel_Palace</IRI>
+        <Literal xml:lang="en">The Palace is a hotel in the Spanish city of Barcelona, ​​formerly known as the Hotel Ritz.
+The building, designed by the architect Eduard Ferrès Puig, is located at 668 Gran Vía de las Cortes Catalanas. The former Ritz hotel was founded in 1919, at the initiative of César Ritz. This new establishment was inspired by the Palace and Ritz hotels in Madrid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotel_Palace</IRI>
+        <Literal xml:lang="en">Hotel_Palace_Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotel_Royal</IRI>
+        <Literal xml:lang="en">Hotel_Royal_Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotel_Sol</IRI>
+        <Literal xml:lang="en">Hotel_Sol_Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotel_Vista</IRI>
+        <Literal xml:lang="en">Hotel_Vista_Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotel_del_Mar</IRI>
+        <Literal xml:lang="en">Hotel_del_Mar_Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Luxury</IRI>
+        <Literal xml:lang="en">These types of hotels offer a luxurious experience to those who can afford it. Like five-star hotels, the target audience for luxury hotels is the rich and famous, business executives, and others. Luxury hotels and resorts should offer many different types of suites, along with various on-site facilities and services, such as fine dining, fitness centers, spas, and pools.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Luxury</IRI>
+        <Literal xml:lang="en">Luxury</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Luxury_hotel</IRI>
+        <Literal xml:lang="en">LuxuryHotel_Cathegory(5-stars)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Madrid_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Madrid_Coords</IRI>
+        <Literal xml:lang="en">Madrid_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Málaga_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Málaga_Coords</IRI>
+        <Literal xml:lang="en">Málaga_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pamplona_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pamplona_Coords</IRI>
+        <Literal xml:lang="en">Pamplona_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Public_Bycicle</IRI>
+        <Literal xml:lang="en">The bicycle is a human-powered personal transport vehicle. It is propelled by the traveler himself, who operates the vehicle with the muscular effort of the legs, in particular by means of pedals or cranks. [2] Its basic components are two wheels, [2] generally of equal diameter and arranged in line, a pedal transmission system, a frame that gives it the structure and integrates the components, a handlebar to control the direction and a saddle to sit on. One-way movement is obtained by turning the symmetrically arranged pedals with the legs, each with a lever known as a crank are assembled in the frame, and in general the right pedal is the one with the largest star or plate where the chain is mounted, which in turn turns the sprocket, which finally turns the rear wheel on the ground, then causing the displacement.
+Public bicycle rental systems have also been available for several years. They are different from conventional rentals because the stations form a network throughout the city, enabling one-way transportation to work, school, or shopping. This makes bicycles accessible to everyone and reduces the problem of private bicycle theft. Users must provide electronic identification before picking up a bicycle to prevent theft and vandalism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Public_Bycicle</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Bicycle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Public_Bycicle</IRI>
+        <Literal xml:lang="en">Public_Bicycle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region</IRI>
+        <Literal xml:lang="en">The term region can refer to a &quot;portion of territory&quot; with certain common characteristics, such as climate, topography, or administration. It can also refer to the &quot;geographic, historical, cultural, and social characteristics&quot; of a nation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Region</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Region</IRI>
+        <Literal xml:lang="en">Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Region</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Restaurants</IRI>
+        <Literal xml:lang="en">A restaurant is a service establishment, usually a public one, where food and drinks are paid for and consumed on the premises or taken away. Today, there is a wide variety of service options and cuisines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Restaurants</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Restaurants</IRI>
+        <Literal xml:lang="en">Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Restaurants</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rural</IRI>
+        <Literal xml:lang="en">The main characteristic of rural hotels is their location in the heart of nature, surrounded by natural landscapes such as mountains, rivers, forests, or meadows. Furthermore, they are usually designed to offer a more authentic experience, incorporating rustic and local elements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rural</IRI>
+        <Literal xml:lang="en">Rural</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#San_Sebastián_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#San_Sebastián_Coords</IRI>
+        <Literal xml:lang="en">San_Sebastián_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sevilla</IRI>
+        <Literal xml:lang="en">Seville</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sevilla_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sevilla_Coords</IRI>
+        <Literal xml:lang="en">Seville_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Spain</IRI>
+        <Literal xml:lang="en">Spain, formally the Kingdom of Spain, is a sovereign transcontinental country, constituted as a social and democratic state governed by the rule of law and whose form of government is a parliamentary monarchy. It is one of the 27 sovereign states that make up the European Union. Its territory, with its capital in Madrid, is organized into 17 autonomous communities, each made up of 50 provinces and two autonomous cities.
+Spain is located primarily in southwestern Europe..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Spain</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spain</IRI>
+        <Literal xml:lang="en">Spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Standard</IRI>
+        <Literal xml:lang="en">Standard_Cathegory(2-stars)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Toledo_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Toledo_Coords</IRI>
+        <Literal xml:lang="en">Toledo_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TourismEntity</IRI>
+        <Literal xml:lang="en">Tourism is a term that includes the activities that people carry out during their trips and stays in places other than their usual environment for a period of time less than a year, for purposes, above all, of leisure, or other purposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#TourismEntity</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Tourism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TourismEntity</IRI>
+        <Literal xml:lang="en">TourismEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TourismEntity</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Tourism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Tourist</IRI>
+        <Literal xml:lang="en">Tourists are increasingly demanding when it comes to booking vacation accommodation. Guests no longer just want a place to spend the night. Instead, they seek an experience that adds value to their vacation and adapts to their needs. They can enjoy all the activities they had planned.
+The services offered will depend on the number of stars the accommodation has.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tourist</IRI>
+        <Literal xml:lang="en">Touristic_Cathegory(1-star)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransportType</IRI>
+        <Literal xml:lang="en">TransportType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transportation</IRI>
+        <Literal xml:lang="en">Transport (in British English) or transportation (in American English) is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipelines, and space. The field can be divided into infrastructure, vehicles, and operations. Transport enables human trade, which is essential for the development of civilizations.
+Transport infrastructure consists of both fixed facilities, including roads, railways, airways, waterways, canals, and pipelines, and terminals such as airports, railway stations, bus stations, warehouses, trucking terminals, refueling depots (including fuel docks and fuel stations), and seaports.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Transportation</IRI>
+        <Literal xml:lang="en">https://en.wikipedia.org/wiki/Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transportation</IRI>
+        <Literal xml:lang="en">Transportation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Transportation</IRI>
+        <Literal xml:lang="en">https://dbpedia.org/page/Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tranviaç</IRI>
+        <Literal xml:lang="en">Tranvia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Valencia_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Valencia_Coords</IRI>
+        <Literal xml:lang="en">Valencia_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Zaragoza_Coords</IRI>
+        <Literal xml:lang="en">Positive latitudes indicates north of the equator, negative latitudes indicate south. Positive longitudes indicate east of the Greenwich Meridian, negative longitudes indicates west.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Zaragoza_Coords</IRI>
+        <Literal xml:lang="en">Zaragoza_Coords</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongsToCity</IRI>
+        <Literal xml:lang="en">locatedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongsToRegion</IRI>
+        <Literal xml:lang="en">isPartOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAverageTransportPrice</IRI>
+        <Literal xml:lang="en">hasAverageCost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMiddlePrice</IRI>
+        <Literal xml:lang="en">hasAveragePrice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#territoryOf</IRI>
+        <Literal xml:lang="en">isInTerritory</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
